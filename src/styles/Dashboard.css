@@ -1,0 +1,16 @@
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px;
+}
+  
+header .headings{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+

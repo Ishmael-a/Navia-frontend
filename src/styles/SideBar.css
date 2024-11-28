@@ -1,0 +1,78 @@
+
+
+.sidebar{
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    position: fixed; 
+    z-index: 1;
+    background-color: #FFF7E7;
+    color: white;
+    transition: width 0.5s ease-in-out;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow: hidden; /* Hide content when closed */
+}
+
+
+/* Sidebar when closed */
+.sidebar-closed {
+    position: fixed; /* Ensure it stays out of layout flow */
+    top: 0;
+    left: 0;
+    width: 0; /* Collapses the sidebar width */
+    height: 100%; /* Keep height consistent */
+    visibility: hidden; /* Fully hide the content */
+    z-index: 1; /* Maintain the layer */
+    transition: width 0.5s ease-in-out; /*visibility 0.1s ease;*/
+}
+
+.top-content{
+    display: flex;
+}
+
+.bottom-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toggle-btn {
+    /* position: fixed; */
+    /* top: 10px; */
+    /* right: 10px; */
+    /*z-index: 2; Ensure it's above the sidebar*/
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.toggle-btn:hover {
+    background-color: rebeccapurple;
+}
+
+
+.logout-btn{
+
+    bottom: 0;
+}
+
+
+.navlink {
+    font-weight: bold;
+    color: grey; /* Change to your desired active color */
+}
+
+
+.activeNavlink {
+    font-weight: bold;
+    color: gray; /* Change to your desired active color */
+}
+
+br{
+    background-color: white;
+    border: 5px;
+}
